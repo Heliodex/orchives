@@ -1,7 +1,7 @@
 ---
 import { ViewTransitions } from "astro:transitions"
 
-const { frontmatter, title } = Astro.props
+const { frontmatter } = Astro.props
 ---
 
 <!doctype html>
@@ -11,14 +11,13 @@ const { frontmatter, title } = Astro.props
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{frontmatter?.title ?? title}</title>
+		<title>ORC Document Archive</title>
 
 		<ViewTransitions />
 	</head>
 	<body>
 		<div id="navcontainer" transition:name="nav">
-			<a id="title" href="/" transition:name="title">ORC Document Archive</a>
-
+			<span />
 			<nav>
 				<a href="/">Home</a>
 				<a href="/changelog">Changelog</a>
@@ -30,7 +29,8 @@ const { frontmatter, title } = Astro.props
 				</a>
 			</nav>
 		</div>
-		<main>
+		<main style="padding:0">
+			<h1 transition:name="title" id="maintitle">ORC Document Archive</h1>
 			<slot />
 		</main>
 		<style lang="stylus"> // formatting gon haywire
