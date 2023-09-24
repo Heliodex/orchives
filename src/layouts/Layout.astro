@@ -19,7 +19,12 @@ const { frontmatter, title } = Astro.props
 		<div id="navcontainer" transition:name="nav">
 			<nav>
 				<a href="/">Home</a>
-				<a href="https://github.com/Heliodex/orchives">GitHub</a>
+				<a
+					href="https://github.com/Heliodex/orchives"
+					target="_blank"
+					rel="noopener noreferrer">
+					GitHub
+				</a>
 			</nav>
 
 			<span id="title">ORC Document Archive</span>
@@ -90,8 +95,8 @@ const { frontmatter, title } = Astro.props
 			color cyan
 			@media (prefers-color-scheme: light)
 				color blue
-			text-decoration-color var(--dark)
-			text-underline-offset 0.5rem
+			text-decoration-color transparent
+			text-underline-offset 0.75rem
 
 			transition all 0.15s, text-underline-offset 0.2s, color 0s
 
@@ -132,6 +137,8 @@ const { frontmatter, title } = Astro.props
 				opacity 0.8
 
 	#docs
+		li
+			padding-bottom 0.75rem
 		a // make em look like butttons
 			box-sizing border-box
 			display inline
@@ -152,23 +159,21 @@ const { frontmatter, title } = Astro.props
 				text-decoration-color var(--light)
 
 	.notification
-		border-bottom 1px solid #fff7
-		
+		border-bottom 2px solid #777
+
 		p
 			margin 0
-			padding 0.5rem 0
+			padding 0.5rem 0 0.2rem 0
 			border-radius 1rem
 			text-align center
-	
-	.timetag
-		background #444
-		padding 0px 3px
-		border-radius:4px
 
-		@media (prefers-color-scheme: light)
-			background white
-			padding 0px 3px
-			border-radius 4px
+	.additions
+		border 1px solid #464443
+		border-radius 1rem
+		padding 0rem 1rem
+		
+		h2
+			text-align center
 
 	hr
 		border none

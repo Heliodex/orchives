@@ -3,13 +3,15 @@ layout: "../layouts/Layout.astro"
 title: "Meteorite: The Whole Shabang"
 ---
 
-import "../meteorite.styl"
+import Styles from "../meteorite.astro"
 
 <div class="notification">
 	This document is a copy of [Meteorite: The Whole
 	Shabang](https://docs.google.com/document/d/1GHwiaTWezaIRUSKgR7XG4VDB_tw88Zz2FCb40RI47yY)
 	\[sic].
 </div>
+
+<Styles>
 
 <h1 style="color:#980000;text-align:center">⚠ WARNING ⚠</h1>
 
@@ -269,7 +271,6 @@ I have made a new doc responding to the things said.
 this is the final update left from me, whoever else wants to say something can do so below
 
 > hi guys
->
 > <br />
 > i just realized we missed so much shit from the meteorite document
 > <br />
@@ -291,3 +292,5 @@ this is the final update left from me, whoever else wants to say something can d
 
 farewell,  
 alosh
+
+</Styles>

@@ -1,0 +1,19 @@
+<div id="meteorite">
+	<slot />
+</div>
+
+<style lang="stylus">
+	#meteorite
+		:global(strong)
+			font-size 1.1em
+
+		:global(.timetag)
+			background #444
+			padding 0px 3px
+			border-radius:4px
+
+			@media (prefers-color-scheme: light)
+				background white
+				padding 0px 3px
+				border-radius 4px
+</style>
