@@ -3,6 +3,7 @@ layout: "../layouts/Layout.astro"
 title: "The Aftermath of the Aftermath: Meteorite"
 ---
 
+import { Image } from "astro:assets"
 import Styles from "../meteorite.astro"
 
 <div class="notification">
@@ -149,6 +150,7 @@ The document gang
     [particles.js](https://vincentgarreau.com/particles.js), which was also
     later removed from Mercury and Krypton's websites.
 
-    ![](/meteorite-aftermath/images/[1].png)
+    {/* <Image src={import("../images/meteorite-aftermath/[1].png")} alt="" /> */}
+    <Image src={import("../images/meteorite-aftermath/[1].png")} alt="" />
 
 </div>
