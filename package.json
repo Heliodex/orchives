@@ -1,5 +1,5 @@
 {
-	"name": "temp",
+	"name": "orchives",
 	"type": "module",
 	"version": "0.0.1",
 	"scripts": {
@@ -11,8 +11,8 @@
 		"astro": "astro"
 	},
 	"devDependencies": {
-		"@astrojs/mdx": "^1.1.0",
-		"astro": "^3.1.2",
+		"@astrojs/mdx": "^1.1.2",
+		"astro": "^3.3.2",
 		"sharp": "^0.32.6",
 		"stylus": "^0.60.0"
 	}

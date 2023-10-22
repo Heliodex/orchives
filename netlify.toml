@@ -1,5 +1,5 @@
 [build.environment]
-NODE_VERSION = "20.8.0"
+NODE_VERSION = "21.0.0"
 NPM_VERSION = "10.2.0"
 
 [build]
