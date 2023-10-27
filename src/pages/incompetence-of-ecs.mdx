@@ -1,0 +1,151 @@
+---
+layout: "../layouts/Layout.astro"
+title: "The Incompetence of Economy Simulator.net"
+---
+
+import { Image } from "astro:assets"
+
+<div class="notification">
+	This document is a copy of the [The Incompetence of Economy
+	Simulator.net](https://blog.kapish.fun/the-incompetence-of-economy-simulator/).
+</div>
+
+# The Incompetence of Economy Simulator.net
+
+EDIT [2]:
+
+New (shit) response from the devs of Economy Simulator (they proceed to show mesh v3 and v4 on studio, congrats on adding this to the studio, i know it was hard for you la..), they also talk about our lack of hashing IPS
+
+We've already responded to this claim in the **Privacy** section where it was discussed it is a waste of time, as any modern day GPU will take >10 seconds to crack it.
+
+[Here's a reddit thread from **13 years ago** to prove our point](https://www.reddit.com/r/programming/comments/acj2n/is_it_practical_to_log_hashed_ips_instead_of/?ref=blog.kapish.fun)
+
+<div style="text-align:center;font-size:1.4rem">
+	> I think the lesson learned here is: don't hash the IPs. It doesn't solve
+	any problems. And I am still not convinced there is any security benefit
+	here... - u/pkrecker
+</div>
+
+(for anyone wondering, we use IPs to detect alt farming, and alts in general)
+
+EDIT [1]:
+
+Economy Simulator developers have responded by stating untruthful statements (proceeds to show no evidence of kinery liking dogs as he said) and shilling his ass com server
+
+You can see his response [here](https://media.discordapp.net/attachments/1038550197908820109/1062345049121243136/Screenshot_20230110-071734.png)
+
+<Image src={import("../images/incompetence-of-ecs/0.png")} alt="" />
+
+Hello everyone!
+
+Today, we will go over the cesspool of "Economy-Simulator.net", a revival based off the much better, but still not great "Economy-Simulator.com".
+
+**Disclaimer: Do not harass any staff of Economy-Simulator.net**
+
+Let's start!
+
+<br />
+
+> ## "New Graphics Engine"
+
+Claim can be found [here](https://media.discordapp.net/attachments/901675289384468500/1061544345297240124/image.png)
+
+<Image src={import("../images/incompetence-of-ecs/1.png")} alt="" />
+
+While it sounds like they actually rewrote RCC 2016's graphic engine (or at least modified it), I've talked to other knowledgeable people and confirmed, this is literally just 2019-2020 RCC and no "2016" code was modified, which brings up to our second point
+
+> ## "Mesh V1-V5 Support"
+
+Claim can be found [here](https://cdn.discordapp.com/attachments/901675289384468500/1061531338156539914/image.png)
+
+<Image src={import("../images/incompetence-of-ecs/2.png")} alt="" />
+
+> 😮😮😮😮😮 MESH V1-V5 IN 2016!!!!
+
+Nope, It's just an effect of 2019-2020 RCC, which unironically took them 5+ hours to setup, which leads to the third point. He also states only on **site**, and if you used them in game, it would error as it is incompatible with 2016.
+
+Now to the big claims.
+
+> ## "I used the Roblox Grid Assemblies"
+
+Claim can be found [here](https://cdn.discordapp.com/attachments/901675289384468500/1061546939621052476/image.png)
+
+<Image src={import("../images/incompetence-of-ecs/3.png")} alt="" />
+
+This claim probably wouldn't be here if before that, he didn't state behavior that doesn't happen on any of Roblox's server software. I asked him to send the file size of a file in Roblox's Grid to confirm he is using it, but he then told me to "fuck off", proceeded to call me XlXi, then banned me.
+
+After I got banned, I joined on an alt and checked the general, they had **wiped the whole entirety of general**, seen [here](https://media.discordapp.net/attachments/1038630389150912615/1061845036288983090/image.png)<sup id="[1]">[[1]](#additions)</sup>, probably to show that he was not actually using Roblox's Grid or Arbiter when confronted.
+
+## .net's Audio issue
+
+Audios are a necessity for most games on Roblox, and some audios are still public (due to them being uploaded by Roblox, or they're shorter than 3 seconds). You would think you would be able to play these in Economy Simulator, right?
+
+Nope.
+
+A user in the server was complaining about how Raining Tacos (a Roblox uploaded audio, that is public) was not working for them. Their response to the user was that, ["holy shit youre slow, bro doesnt even knwo about the roblox audio privacy update"](https://media.discordapp.net/attachments/994786406553632849/1061846723116417064/image.png). <Image src={import("../images/incompetence-of-ecs/4.png")} alt="" /> If he would have looked at the asset page for 2 seconds, he would have seen that it was actually public. When I do confront him and tell him that it is possible (it takes one header to do so ??? your client should be sending this already), and show him that it's possible, his response was "ok idc tho" Screenshot can be seen [here](https://media.discordapp.net/attachments/994786406553632849/1061847235484209232/image.png) <Image src={import("../images/incompetence-of-ecs/5.png")} alt="" /> 15 minutes later, my alt was banned. He also banned a donator that agreed with me, nice job ECS (proof: [here](https://cdn.discordapp.com/attachments/1038630389150912615/1061890843537051768/image.png)<sup id="[2]">[[2]](#additions)</sup>)
+
+TL:DR for this section: owner talks shit to member, gets proven wrong, goes "idc" and bans the person who proved him wrong
+
+## Privacy
+
+On the home page of Economy-Simulator.net, you can find the following:
+
+<div style="text-align:center;font-size:1.4rem">
+	> IP Addresses are hashed and only stored temporarily. Your IP is only
+	stored in a hashed format when you perform certain actions
+</div>
+
+While the "IP's stored temporarily" thing might be true (haven't really read about economy sim source code), hashing IP's does not give you any security at all. Take this post by 3dsboy08 (owner of Roblox exploit Synapse) explaining how hashing IP's is basically "snake oil":
+
+> Of course, the actual purpose of logging IPs is explicitly so you can look them up and see the ISP/other information from that IP address - but there is a million arguments made on this forum already about this, so I will skip to why this is stupid from a security prospective.
+>
+> <br />
+> There is a hard limit of 2^32 IPv4 addresses - this means that at a maximum, there
+> is 4,294,967,296 IPv4 addresses in existence. Sounds good, right? Yeah, that is
+> until you look at the amount of hashes a modern GPU can calculate per second. Currently,
+> a 1080 TI can do upwards of 17 billion SHA-256 hashes per second, which means **your
+> hash would be broken in less then a second by anyone using a completely naïve brute-force
+> attack.** This could be made much faster by simple elimination of private IP ranges
+> or simple targeting, which makes this 'protection' little more then snake-oil and
+> security theater.
+> <br />
+> You might be thinking that IPv6 addresses would protect you from this, but that
+> isn't really the case either. While there are 2^128 IPv6 addresses available, the
+> amount actively used by residential ISPs currently is far lower then that insane
+> number, which again makes this attack practical by someone who knows how to Google
+> around. This brings up to our last point.
+
+## Browser (or not so) based
+
+When releasing the source code to Economy-Simulator, Floatzel did one thing, which was not release the WebASM for the client. This makes the whole point of the new Economy-Simulator the same as every other revival, as the main point for Economy-Simulator was to be "exploit free", and "browser based!".
+
+## Honorable Mentions
+
+[arbiter bugging, person on alt was apparently stan some loser no one likes](https://media.discordapp.net/attachments/901675289384468500/1061819516499271750/image.png)
+
+<Image src={import("../images/incompetence-of-ecs/5.png")} alt="" />
+
+["hitius source has vulns and rce's in it"](https://cdn.discordapp.com/attachments/994786406553632849/1061851654825185371/image.png), even though his client does not have the raknet vuln patched
+
+<Image src={import("../images/incompetence-of-ecs/6.png")} alt="" />
+
+[no one gives a fuck if u don't want a client and a laggy browser client instead](https://cdn.discordapp.com/attachments/994786406553632849/1061852170032521317/image.png), while floatzel did nuke dx11, the web client ran fine (ex: here)
+
+<Image src={import("../images/incompetence-of-ecs/7.png")} alt="" />
+
+[rosem gets harassed by rre people all the time](https://cdn.discordapp.com/attachments/994786406553632849/1061852587902644304/image.png), no he does not, he literally just joins rre, spams, gets banned and repeats the process (then gambles, and loses)
+
+<Image src={import("../images/incompetence-of-ecs/8.png")} alt="" />
+
+meme: [THE 2022 PLACES CRASHING RCC!!! BAN THE PLACE ID....](https://media.discordapp.net/attachments/1038630389150912615/1061887554267394098/image.png)<sup id="[3]">[[3]](#additions)</sup>
+
+That is all, we are Tadah.
+
+<br />
+
+<div class="additions">
+	## Additions
+
+    [[1]](#\[1]), [[2]](#\[2]), [[3]](#\[3]): These images were unavailable and returned invalid responses at the time of archival, they also seem to be unavailable on the [archives of the page available on the Internet Archive](https://web.archive.org/web/20230000000000*/https://blog.kapish.fun/the-incompetence-of-economy-simulator/). If you have access to any of these images, please contact me or file an issue on this site's [GitHub repository](https://github.com/Heliodex/orchives).
+
+</div>
