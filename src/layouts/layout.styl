@@ -30,38 +30,52 @@ main
 				text-decoration-color orange
 			text-underline-offset 0.1rem
 
-	video
-	img
-		max-width 800px
-		width auto
-		height auto
-		border-radius 0.75rem
-		padding 0.2rem
-		display block
+video
+img
+	max-width 800px
+	width auto
+	height auto
+	border-radius 0.75rem
+	padding 0.2rem
+	display block
 
-		&:not(.tall)
-			max-height 600px
+	&:not(.tall)
+		max-height 600px
 
-	.thin
-	.thin img
-		max-width 400px
+.thin
+.thin img
+	max-width 400px
 
-	.inline
-	.inline img
-		display inline !important
+.inline
+.inline img
+	display inline !important
+
+blockquote
+	margin-left 0.5rem
+	padding 0.5rem 0 0.5rem 1rem
+	border-left 0.2rem solid rgba(136, 136, 136, 0.667)
+	font-style italic
 
 	blockquote
-		margin-left 0.5rem
-		padding 0.5rem 0 0.5rem 1rem
-		border-left 0.2rem solid rgba(136, 136, 136, 0.667)
-		font-style italic
+		margin-left 0rem
 
-		blockquote
-			margin-left 0rem
+	*
+		margin 0
+		opacity 0.8
 
-		*
-			margin 0
-			opacity 0.8
+table
+	border-collapse collapse
+	// make table columns equal width
+	width 100%
+	table-layout fixed
+
+table
+th
+td
+	vertical-align top
+	border 1px solid #464443
+	padding 0.5rem
+	margin 0
 
 #docs
 	li

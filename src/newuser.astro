@@ -1,0 +1,51 @@
+<div id="newuser">
+	<slot />
+</div>
+
+<style lang="stylus">
+	#newuser
+		:global(h2)
+			text-align center
+			
+	// newuser is colored blue  
+	// fin is colored green  
+	// Shedletsky is colored red  
+	// quantam is colored yellow  
+	// yeano is colored purple  
+	// TestService is colored pink  
+	// qzip is colored white with black highlight  
+	// bgr2 is colored orange  
+	// Invitat is colored cyan  
+	// Carly/608 is colored dark green 2  
+	// Snowy is colored distorted purple  
+	// nolanwhy is colored gray cyan
+
+		:global(.newuser)
+			color cornflowerblue
+		:global(.fin)
+			color lime
+		:global(.Shedletsky)
+			color red
+		:global(.quantam)
+			color yellow
+		:global(.yeano)
+			color violet
+		:global(.TestService)
+			color pink
+		:global(.qzip)
+			color black
+			background-color white
+			@media (prefers-color-scheme: light)
+				color white
+				background-color black
+		:global(.bgr2)
+			color orange
+		:global(.Invitat)
+			color cyan
+		:global(.Carly)
+			color springgreen
+		:global(.Snowy)
+			color mediumpurple
+		:global(.nolanwhy)
+			color #45818e
+</style>
