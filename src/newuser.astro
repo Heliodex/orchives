@@ -7,31 +7,37 @@
 		:global(h2)
 			text-align center
 			
-	// newuser is colored blue  
-	// fin is colored green  
-	// Shedletsky is colored red  
-	// quantam is colored yellow  
-	// yeano is colored purple  
-	// TestService is colored pink  
-	// qzip is colored white with black highlight  
-	// bgr2 is colored orange  
-	// Invitat is colored cyan  
-	// Carly/608 is colored dark green 2  
-	// Snowy is colored distorted purple  
-	// nolanwhy is colored gray cyan
+		// newuser is coloured blue  
+		// fin is coloured green  
+		// Shedletsky is coloured red  
+		// quantam is coloured yellow  
+		// yeano is coloured purple  
+		// TestService is coloured pink  
+		// qzip is coloured white with black highlight  
+		// bgr2 is coloured orange  
+		// Invitat is coloured cyan  
+		// Carly/608 is coloured dark green 2  
+		// Snowy is coloured distorted purple  
+		// nolanwhy is coloured grey cyan
 
 		:global(.newuser)
 			color cornflowerblue
 		:global(.fin)
 			color lime
+			@media (prefers-color-scheme: light)
+				color green
 		:global(.Shedletsky)
 			color red
 		:global(.quantam)
 			color yellow
+			@media (prefers-color-scheme: light)
+				color darkgoldenrod
 		:global(.yeano)
 			color violet
 		:global(.TestService)
 			color pink
+			@media (prefers-color-scheme: light)
+				color magenta
 		:global(.qzip)
 			color black
 			background-color white
@@ -40,8 +46,12 @@
 				background-color black
 		:global(.bgr2)
 			color orange
+			@media (prefers-color-scheme: light)
+				color brown
 		:global(.Invitat)
 			color cyan
+			@media (prefers-color-scheme: light)
+				color darkcyan
 		:global(.Carly)
 			color springgreen
 		:global(.Snowy)

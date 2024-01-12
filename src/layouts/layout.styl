@@ -114,6 +114,7 @@ td
 	border 1px solid #464443
 	border-radius 1rem
 	padding 0rem 1rem
+	margin-top 4rem // bad programmer, no <br />
 
 	video
 		max-width 100%
@@ -129,10 +130,12 @@ hr
 	--light: white
 	--dark: black
 	--bg: black
+	--active: #aaa
 	@media (prefers-color-scheme: light)
 		--light: black
 		--dark: white
 		--bg: #ddd
+		--active: #444
 
 body
 	background var(--bg)
@@ -161,6 +164,11 @@ a#title:hover
 	align-items center
 	justify-content space-between
 
+.green
+	color lime
+	@media (prefers-color-scheme: light)
+		color green
+
 nav
 	display flex
 	gap 1rem
@@ -181,5 +189,8 @@ nav
 		&:hover
 			background var(--light)
 			color var(--dark)
-			border 1px solid var(--bg)
+			border 1px solid transparent
 			border-radius 0.75rem
+			
+		&:active
+			background var(--active)
