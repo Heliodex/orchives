@@ -1,0 +1,22 @@
+<div id="ellernate">
+	<slot />
+</div>
+
+<style lang="stylus">
+	#ellernate
+		:global(.center, h1)
+			text-align center
+			:global(img)
+				margin 0 auto
+		
+		// custom elements might be good for this actually
+		:global(v1)
+			color cornflowerblue
+		:global(v2)
+			color #90f
+		:global(red)
+			color red
+
+		:global(v1, v2, red)
+			font-weight bold
+</style>
