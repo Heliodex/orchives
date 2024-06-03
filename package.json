@@ -10,9 +10,9 @@
 		"astro": "astro"
 	},
 	"devDependencies": {
-		"@astrojs/mdx": "^2.1.1",
-		"astro": "^4.4.1",
-		"sharp": "^0.33.2",
-		"stylus": "^0.62.0"
+		"@astrojs/mdx": "^3.0.1",
+		"astro": "^4.9.2",
+		"sharp": "^0.33.4",
+		"stylus": "^0.63.0"
 	}
 }
