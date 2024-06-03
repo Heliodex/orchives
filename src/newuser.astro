@@ -2,60 +2,84 @@
 	<slot />
 </div>
 
-<style lang="stylus">
-	#newuser
-		:global(h2)
-			text-align center
+<style>
+	#newuser {
+		& :global(h2) {
+			text-align: center;
+		}
 
-		// newuser is coloured blue  
-		// fin is coloured green  
-		// Shedletsky is coloured red  
-		// quantam is coloured yellow  
-		// yeano is coloured purple  
-		// TestService is coloured pink  
-		// qzip is coloured white with black highlight  
-		// bgr2 is coloured orange  
-		// Invitat is coloured cyan  
-		// Carly/608 is coloured dark green 2  
-		// Snowy is coloured distorted purple  
-		// nolanwhy is coloured grey cyan
+		/*
+			newuser is coloured blue  
+			fin is coloured green  
+			Shedletsky is coloured red  
+			quantam is coloured yellow  
+			yeano is coloured purple  
+			TestService is coloured pink  
+			qzip is coloured white with black highlight  
+			bgr2 is coloured orange  
+			Invitat is coloured cyan  
+			Carly/608 is coloured dark green 2  
+			Snowy is coloured distorted purple  
+			nolanwhy is coloured grey cyan
+		*/
 
-		:global(.newuser)
-			color cornflowerblue
-		:global(.fin)
-			color lime
-			@media (prefers-color-scheme: light)
-				color green
-		:global(.Shedletsky)
-			color red
-		:global(.quantam)
-			color yellow
-			@media (prefers-color-scheme: light)
-				color darkgoldenrod
-		:global(.yeano)
-			color violet
-		:global(.TestService)
-			color pink
-			@media (prefers-color-scheme: light)
-				color magenta
-		:global(.qzip)
-			color black
-			background-color white
-			@media (prefers-color-scheme: light)
-				color white
-				background-color black
-		:global(.bgr2)
-			color orange
-			@media (prefers-color-scheme: light)
-				color brown
-		:global(.Invitat)
-			color cyan
-			@media (prefers-color-scheme: light)
-				color darkcyan
-		:global(.Carly)
-			color springgreen
-		:global(.Snowy)
-			color mediumpurple
-		:global(.nolanwhy)
-			color #45818e
+		& :global(.newuser) {
+			color: #6495ed;
+		}
+		& :global(.fin) {
+			color: #0f0;
+			@media (prefers-color-scheme: light) {
+				color: #008000;
+			}
+		}
+		& :global(.Shedletsky) {
+			color: #f00;
+		}
+		& :global(.quantam) {
+			color: #ff0;
+			@media (prefers-color-scheme: light) {
+				color: #b8860b;
+			}
+		}
+		& :global(.yeano) {
+			color: #ee82ee;
+		}
+		& :global(.TestService) {
+			color: #ffc0cb;
+			@media (prefers-color-scheme: light) {
+				color: #f0f;
+			}
+		}
+		& :global(.qzip) {
+			color: #000;
+			background-color: #fff;
+			@media (prefers-color-scheme: light) {
+				color: #fff;
+				background-color: #000;
+			}
+		}
+		& :global(.bgr2) {
+			color: #ffa500;
+		}
+		@media (prefers-color-scheme: light) {
+			& :global(.bgr2) {
+				color: #a52a2a;
+			}
+		}
+		& :global(.Invitat) {
+			color: #0ff;
+			@media (prefers-color-scheme: light) {
+				color: #008b8b;
+			}
+		}
+		& :global(.Carly) {
+			color: #00ff7f;
+		}
+		& :global(.Snowy) {
+			color: #9370db;
+		}
+		& :global(.nolanwhy) {
+			color: #45818e;
+		}
+	}
 </style>

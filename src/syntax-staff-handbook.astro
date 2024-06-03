@@ -2,22 +2,26 @@
 	<slot />
 </div>
 
-<style lang="stylus">
-	#syntax-staff-handbook
-		:global(img)
-			width 236px
-			margin 0 auto
-
-		:global(h2)
-			padding-top 5rem
-
-		:global(p)
-		:global(table)
-			font-size 1.2rem
-
-		:global(table)
-			:global(th)
-			:global(td)
-				&:first-child
-					width 11rem
+<style>
+	#syntax-staff-handbook {
+		& :global(img) {
+			width: 236px;
+			margin: 0 auto;
+		}
+		& :global(h2) {
+			padding-top: 5rem;
+		}
+		& :global(p),
+		& :global(table) {
+			font-size: 1.2rem;
+		}
+		& :global(table) {
+			& :global(th),
+			& :global(td) {
+				&:first-child {
+					width: 11rem;
+				}
+			}
+		}
+	}
 </style>

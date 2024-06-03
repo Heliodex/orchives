@@ -2,13 +2,15 @@
 	<slot />
 </div>
 
-<style lang="stylus">
-	#neek-gameguy-argue
-		:global(h1)
-			color grey
-
-		:global(h1)
-		:global(h2)
-			text-align center
-			text-decoration underline
+<style>
+	#neek-gameguy-argue {
+		& :global(h1) {
+			color: #808080;
+		}
+		& :global(h1),
+		& :global(h2) {
+			text-align: center;
+			text-decoration: underline;
+		}
+	}
 </style>

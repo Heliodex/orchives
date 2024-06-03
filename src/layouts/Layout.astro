@@ -46,8 +46,8 @@ const { frontmatter, title } = Astro.props
 		<main>
 			<slot />
 		</main>
-		<style is:global lang="stylus"> // formatting gon haywire
-	@import "./layout.styl"
-</style>
+		<style is:global>
+			@import "./layout.css";
+		</style>
 	</body>
 </html>

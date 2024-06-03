@@ -2,42 +2,54 @@
 	<slot />
 </div>
 
-<style lang="stylus">
-	#newuser
-		:global(h2)
-			text-align center
-		:global(h2, h3, h4)
-			font-weight normal
-		:global(h3, h4)
-			color grey
+<style>
+	#newuser {
+		& :global(h2) {
+			text-align: center;
+		}
+		& :global(h2, h3, h4) {
+			font-weight: normal;
+		}
+		& :global(h3, h4) {
+			color: #808080;
+		}
 
-		// Red - kitproj (sadsad1337, sadert, and the likeness)
-		// Purple - sh0rk/jul/722 - Note: I will back this doc up and refer to it as “COU”.
-		// Light Blue - Czech
-		// Lighter Blue - 4fr
-		// Orange - wafkee
-		// White - Carly (except for the title and subtitles)
-		// Green - Official B / Recon
-		// Dark Red - dewd
-		// Dark Cyan - fin
-		// Lighter Dark Red - newuser
+		/*
+			Red - kitproj (sadsad1337, sadert, and the likeness)
+			Purple - sh0rk/jul/722 - Note: I will back this doc up and refer to it as “COU”.
+			Light Blue - Czech
+			Lighter Blue - 4fr
+			Orange - wafkee
+			White - Carly (except for the title and subtitles)
+			Green - Official B / Recon
+			Dark Red - dewd
+			Dark Cyan - fin
+			Lighter Dark Red - newuser
+		*/
 
-		:global(kitproj)
-			color red
-		:global(sh0rk)
-			color #90f
-		:global(czech)
-			color cornflowerblue
-		:global(fourfr)
-			color lightblue
-			@media (prefers-color-scheme: light)
-				color darkblue
-		:global(wafkee)
-			color orange
-		:global(carly)
-			color white
-			// lelel
-			text-shadow 0 0 2px #555,
+		& :global(kitproj) {
+			color: #f00;
+		}
+		& :global(sh0rk) {
+			color: #90f;
+		}
+		& :global(czech) {
+			color: #6495ed;
+		}
+		& :global(fourfr) {
+			color: #add8e6;
+		}
+		@media (prefers-color-scheme: light) {
+			& :global(fourfr) {
+				color: #00008b;
+			}
+		}
+		& :global(wafkee) {
+			color: #ffa500;
+		}
+		& :global(carly) {
+			color: #fff;
+			text-shadow:
 				0 0 2px #555,
 				0 0 2px #555,
 				0 0 2px #555,
@@ -45,12 +57,13 @@
 				0 0 2px #555,
 				0 0 2px #555,
 				0 0 2px #555,
-				0 0 2px #555e
-
-			@media (prefers-color-scheme: light)
-				color black
-				// lelel
-				text-shadow 0 0 2px #999,
+				0 0 2px #555,
+				0 0 2px #555;
+		}
+		@media (prefers-color-scheme: light) {
+			& :global(carly) {
+				color: #000;
+				text-shadow:
 					0 0 2px #999,
 					0 0 2px #999,
 					0 0 2px #999,
@@ -58,20 +71,29 @@
 					0 0 2px #999,
 					0 0 2px #999,
 					0 0 2px #999,
-					0 0 2px #999
-
-		:global(officialb)
-			color green
-		:global(dewd)
-			color #9b3f30
-		:global(fin)
-			color darkcyan
-		:global(newuser)
-			color darkred
-		:global(mangloid)
-			background grey
-			color yellow
-		:global(epic52)
-			background grey
-			color darkred
+					0 0 2px #999,
+					0 0 2px #999;
+			}
+		}
+		& :global(officialb) {
+			color: #008000;
+		}
+		& :global(dewd) {
+			color: #9b3f30;
+		}
+		& :global(fin) {
+			color: #008b8b;
+		}
+		& :global(newuser) {
+			color: #8b0000;
+		}
+		& :global(mangloid) {
+			background: #808080;
+			color: #ff0;
+		}
+		& :global(epic52) {
+			background: #808080;
+			color: #8b0000;
+		}
+	}
 </style>

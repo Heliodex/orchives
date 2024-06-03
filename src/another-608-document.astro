@@ -1,19 +1,25 @@
-<div id="glass-of-water">
+<div id="another-608-document">
 	<slot />
 </div>
 
-<style lang="stylus">
-	#glass-of-water
-		:global(h2)
-			color grey
-			font-size 1.2rem
-		:global(h3, h4)
-			text-align center
-		:global(h3)
-			font-size 1.8rem
-		:global(h4)
-			color grey
-			font-size 1.2rem
-		:global(img)
-			margin 0 auto
+<style>
+	#another-608-document {
+		& :global(h2) {
+			color: #808080;
+			font-size: 1.2rem;
+		}
+		& :global(h3, h4) {
+			text-align: center;
+		}
+		& :global(h3) {
+			font-size: 1.8rem;
+		}
+		& :global(h4) {
+			color: #808080;
+			font-size: 1.2rem;
+		}
+		& :global(img) {
+			margin: 0 auto;
+		}
+	}
 </style>
